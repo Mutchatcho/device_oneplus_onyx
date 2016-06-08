@@ -214,4 +214,5 @@ PRODUCT_PACKAGES += \
     hostapd.deny
 
 PRODUCT_PACKAGES += \
-    wcnss_service
+    wcnss_service \
+    wificond
