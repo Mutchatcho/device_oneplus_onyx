@@ -99,6 +99,10 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     rmnetcli
 
+# Bluetooth HAL
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl
+
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8974 \
