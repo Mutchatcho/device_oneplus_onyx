@@ -179,6 +179,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_oppo
+
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
