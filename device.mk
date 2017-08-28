@@ -97,7 +97,8 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     Camera2 \
-    camera.msm8974
+    camera.msm8974 \
+    libshims_atomic
 
 # Camera HIDL interfaces
 PRODUCT_PACKAGES += \
