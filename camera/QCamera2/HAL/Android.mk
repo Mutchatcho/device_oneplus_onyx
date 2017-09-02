@@ -64,6 +64,7 @@ LOCAL_SHARED_LIBRARIES += libmmcamera_interface libmmjpeg_interface libhidltrans
 LOCAL_STATIC_LIBRARIES := libarect
 
 LOCAL_MODULE_RELATIVE_PATH    := hw
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_TAGS := optional
 
