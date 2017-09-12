@@ -273,6 +273,9 @@ on post-fs
     chmod 0660 /proc/tri-state-key/keyCode_middle
     chmod 0660 /proc/tri-state-key/keyCode_bottom
 
+    # DNM
+    rm /data/logcat.txt
+
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
 
@@ -363,6 +366,12 @@ on property:hw.fm.init=1
 
 on property:hw.fm.init=0
     write /sys/module/radio_iris_transport/parameters/fmsmd_set 0
+
+# DNM
+service logcat_debug /system/bin/logcat -b all -f /data/logcat.txt -v threadtime
+    class main
+    user root
+    group system
 
 service rmt_storage /system/bin/rmt_storage
     class core
