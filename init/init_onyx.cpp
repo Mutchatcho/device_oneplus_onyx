@@ -32,7 +32,6 @@
 #include <android-base/properties.h>
 #include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
 
 using android::base::GetProperty;
 
@@ -74,6 +73,4 @@ void vendor_load_properties()
         property_override("ro.product.model", "ONE E1000");
         property_override("ro.rf_version", "TDD_FDD_ALL_OPTR");
     }
-    device = GetProperty("ro.product.device", "");
-    LOG(INFO) << "Found rf_version : " << rf_version.c_str() << " setting build properties for " << device.c_str() << " device\n";
 }
