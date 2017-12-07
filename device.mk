@@ -108,10 +108,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_treble=true
 
-# Camera HIDL interfaces
+# Legacy Camera HIDL interfaces
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
-    camera.device@1.0-impl
+    android.hardware.camera.provider@2.4-impl-legacy \
+    camera.device@1.0-impl-legacy
 
 # Data
 PRODUCT_PACKAGES += \
