@@ -78,6 +78,7 @@ persist.media.treble_omx=false
 sys.io.scheduler=deadline
 
 # QC vendor extension
+ro.frp.pst=/dev/block/platform/msm_sdcc.1/by-name/config
 drm.service.enabled=true
 
 # QMI
