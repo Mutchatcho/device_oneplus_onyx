@@ -298,3 +298,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     wcnss_service \
     wificond
+
+$(call inherit-product, $(LOCAL_PATH)/hidl.mk)
