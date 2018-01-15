@@ -146,9 +146,6 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.full
 BOARD_PROVIDES_LIBRIL := true
 BOARD_PROVIDES_RILD := true
 
-# RPC
-TARGET_NO_RPC := true
-
 # SELinux
 # BOARD_SEPOLICY_DIRS += \
 #      device/oneplus/onyx/sepolicy
