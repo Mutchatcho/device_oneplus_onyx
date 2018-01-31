@@ -87,16 +87,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
-# Audio HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio.effect@2.0-impl
-
-# DRM HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service
-
 # Camera
 PRODUCT_PACKAGES += \
     Camera2 \
@@ -107,11 +97,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_treble=true
 
-# Legacy Camera HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl-legacy \
-    camera.device@1.0-impl-legacy
-
 # Data
 PRODUCT_PACKAGES += \
     librmnetctl \
@@ -121,10 +106,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbt-vendor
 
-# Bluetooth HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl
-
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8974 \
@@ -133,18 +114,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8974 \
     liboverlay \
     libtinyxml
-
-# Display HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-impl \
-    android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.composer@2.1-impl \
-    android.hardware.graphics.mapper@2.0-impl \
-    android.hardware.memtrack@1.0-impl
-
-# RenderScript HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
 
 # Gello
 PRODUCT_PACKAGES += \
@@ -159,10 +128,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
-
-# GPS HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl
 
 # IPv6
 PRODUCT_PACKAGES += \
@@ -181,10 +146,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     keystore.msm8974
 
-# Keymaster HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl
-
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
@@ -192,21 +153,9 @@ PRODUCT_PACKAGES += \
     qcom.fmradio \
     qcom.fmradio.xml
 
-# FM HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl
-
 # Lights
 PRODUCT_PACKAGES += \
     lights.msm8974
-
-# Lights HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl
-
-# Vibrator HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -240,10 +189,6 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     libxml2
 
-# RIL HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0-impl
-
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy \
@@ -256,21 +201,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshims_sensors
 
-# Sensors HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl
-
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
-
-# USB HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
-
-# Configstore HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service
 
 # WiFi
 PRODUCT_COPY_FILES += \
@@ -286,10 +219,6 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     wpa_supplicant_overlay.conf \
     p2p_supplicant_overlay.conf
-
-# WiFi HIDL interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service
 
 PRODUCT_PACKAGES += \
     wcnss_service \
