@@ -38,8 +38,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     ueventd.qcom.rc
 
-PRODUCT_PACKAGES += \
-    init.qcom.bt.sh
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.bt.sh:system/vendor/bin/init.qcom.bt.sh
 
 # Permissions
 PRODUCT_COPY_FILES += \
